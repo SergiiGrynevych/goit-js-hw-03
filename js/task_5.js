@@ -6,17 +6,30 @@
 
 // Используй метод push для добавления значения в массив и оператор in для проверки наличия свойства в объекте.
 
+////// Первый вариант решения /////////////////////
+// function getAllPropValues(array, prop) {
+//   "use strict";
+//   let allPropValue = [];
+//   for (const value of array) {
+//     if (prop in value) {
+//       allPropValue.push(value[prop]);
+//       continue;
+//     }
+//     return allPropValue;
+//   }
+//   return allPropValue;
+// }
+
+////// Второй вариант решения /////////////////////
 function getAllPropValues(array, prop) {
   "use strict";
-  let allPropValue = [];
+  let result = [];
   for (const value of array) {
     if (prop in value) {
-      allPropValue.push(value[prop]);
-      continue;
+      result.push(value[prop]);
     }
-    return allPropValue;
   }
-  return allPropValue;
+  return result;
 }
 
 // Объекты и ожидаемый результат
