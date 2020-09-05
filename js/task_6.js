@@ -3,16 +3,29 @@
 // Напиши функцию calculateTotalPrice(allProdcuts, productName), которая получает массив объектов и имя
 // продукта(значение свойства name).Возвращает общую стоимость продукта(цена умноженная на количество).
 
+//// Первый вариант решения /////
+// function calculateTotalPrice(array, prop) {
+//   "use strict";
+//   let totalPrice = 0;
+//   if (array.length === 0) {
+//     return totalPrice;
+//   }
+//   for (const obj of array) {
+//     if (obj.name === prop) {
+//       totalPrice += obj.price * obj.quantity;
+//       continue;
+//     }
+//   }
+//   return totalPrice;
+// }
+
+//// Второй вариант решения /////
 function calculateTotalPrice(array, prop) {
   "use strict";
   let totalPrice = 0;
-  if (array.length === 0) {
-    return totalPrice;
-  }
   for (const obj of array) {
     if (obj.name === prop) {
       totalPrice += obj.price * obj.quantity;
-      continue;
     }
   }
   return totalPrice;
