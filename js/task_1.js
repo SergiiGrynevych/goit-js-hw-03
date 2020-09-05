@@ -45,3 +45,23 @@ premium : false
 mood : happy
 "full time" : true
 ' */
+
+
+//////////////////////////////////////////////////////
+// так же можно сделать перебором ключей, не используя
+// Object.keys, но задача не будет решена, потому что
+// автопроверка требует использования метода for..of
+
+// for (const key in user) {
+//   message += `${key} : ${user[key]}\n`;
+// }
+
+//console.log(message);
+/*
+'age : 20
+hobby : skydiving
+name : Mango
+premium : false
+mood : happy
+"full time" : true
+' */
